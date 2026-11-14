@@ -1,0 +1,33 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse / VS Code ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.vscode/
+
+### Logs e Arquivos Temporários ###
+*.log
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+### Sistema Operacional (Linux / macOS / Windows) ###
+.DS_Store
+Thumbs.db
