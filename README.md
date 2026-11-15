@@ -139,28 +139,26 @@ Setup & Run
 ```
    
 2. Create the PostgreSQL database:
-    SQL
-```text
-    CREATE DATABASE gun_shop_db;
+    
+```SQL
+CREATE DATABASE gun_shop_db;
 ```
 
 3. Configure database credentials in application.properties (or application.yml):
    Edit src/main/resources/application.properties:
-```text
-    Properties
+```Properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/gun_shop_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 
-    spring.datasource.url=jdbc:postgresql://localhost:5432/gun_shop_db
-    spring.datasource.username=your_username
-    spring.datasource.password=your_password
-
-    spring.jpa.hibernate.ddl-auto=update
-    spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
 ```
 
 4. Run the application:
 
 ```Bash
-    ./mvnw spring-boot:run
+./mvnw spring-boot:run
 ```
 5. Access the API:
 
